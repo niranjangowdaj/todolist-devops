@@ -74,7 +74,6 @@ function toggleTodo(id) {
     todos = todos.map(todo => {
         if (todo.id === id) {
             return {
-                ...todo,
                 completed: !todo.completed
             };
         }
