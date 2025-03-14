@@ -1,6 +1,6 @@
 describe('Todo list', () => {
   it('adds task', () => {
-    cy.visit('https://niranjangowdaj.github.io/todolist-devops/')
+    cy.visit('https://niranjangowdaj.github.io/todolist-devops-demo/')
     cy.get('#todoInput').clear();
     cy.get('#todoInput').type('task 1');
     cy.get('#addBtn').click();
@@ -8,7 +8,7 @@ describe('Todo list', () => {
   })
 
   it('completes tasks', () => {
-    cy.visit('https://niranjangowdaj.github.io/todolist-devops/')
+    cy.visit('https://niranjangowdaj.github.io/todolist-devops-demo/')
     cy.get('#todoInput').clear();
     cy.get('#todoInput').type('task 1');
     cy.get('#addBtn').click();
@@ -25,7 +25,7 @@ describe('Todo list', () => {
   })
 
   it('deletes tasks', () => {
-    cy.visit('https://niranjangowdaj.github.io/todolist-devops/')
+    cy.visit('https://niranjangowdaj.github.io/todolist-devops-demo/')
     cy.get('#todoInput').clear();
     cy.get('#todoInput').type('task 1');
     cy.get('#addBtn').click();
